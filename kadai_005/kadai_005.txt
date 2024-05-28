@@ -1,0 +1,31 @@
+mkdir git_challenge
+cd git_challenge
+ech "ファイル追加">hello_world.txt
+ech "日本語訳を追記">>hello_world
+
+Hello,world!
+こんにちは、世界！
+
+
+
+$ cd /c/Users/ychar/OneDrive/ドキュメント/git_challenge
+$ git add hello_world.txt
+$ git commit -m "hello_world.txtを追加"
+[main 110f9b6] hello_world.txtを追加
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ychar@LAPTOP-FJ19A4NV MINGW64 ~/OneDrive/ドキュメント/git_challenge (main)
+$ git add hello_world.txt
+
+ychar@LAPTOP-FJ19A4NV MINGW64 ~/OneDrive/ドキュメント/git_challenge (main)
+$ echo "hello_world.txtを追加" >> hello_world.txt
+git add hello_world.txt
+git commit -m "日本語訳を追記"
+warning: in the working copy of 'OneDrive/ドキュメント/git_challenge/hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+[main 9062d54] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+ychar@LAPTOP-FJ19A4NV MINGW64 ~/OneDrive/ドキュメント/git_challenge (main)
+$ git log --oneline
+9062d54 (HEAD -> main) 日本語訳を追記
+110f9b6 hello_world.txtを追加
